@@ -255,3 +255,45 @@ nmap -sn -PR 192.168.1.0/24
 [résultat dans Scan.pcap]
 ```
 
+🌞 Changer d'adresse IP
+
+On commmence par lancer le powershell en tant que administrateur.
+
+Grace au scan effectuer avant nous utilison un filtre pour permettre de filtrer les ip permettant de voir qu'elles sont les adresses utilisable quand celle-ci marque no-request.
+
+Nous utilisons par la suite la commande suivant qui permet de recuperer le noms de l'interface correspond dans notre cas à la carte wi-fi.
+
+```
+PS C:\Windows\system32> Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Wi-Fi                     Killer(R) Wireless-AC 1550i Wireless...      10 Up           D4-3B-04-FF-44-7A     866.7 Mbps
+Ethernet                  Killer E2500 Gigabit Ethernet Contro...       7 Disconnected B4-2E-99-3A-92-0D          0 bps
+Ethernet 2                VirtualBox Host-Only Ethernet Adapter         6 Up           0A-00-27-00-00-06         1 Gbps
+
+```
+
+Ensuite, nous utilisons une autre command permettant de modifier les ip de notre carte Wi-Fi.
+
+
+
+```powershell
+New-NetIPAddress -interfaceAlias "Wi-Fi" -IPAddress "192.168.1.38" -PrefixLength 24 -DefaultGateway "192.168.1.1"
+#                               Nom du réseau        ip disponile                                    passerelle
+
+ipconfig
+
+Carte réseau sans fil Wi-Fi :
+
+   Suffixe DNS propre à la connexion. . . : home
+   Adresse IPv6. . . . . . . . . . . . . .: 2a01:cb19:b08:8600:b5e:db11:955:b668
+   Adresse IPv6 temporaire . . . . . . . .: 2a01:cb19:b08:8600:e4c8:9752:19dd:f51d
+   Adresse IPv6 de liaison locale. . . . .: fe80::faf0:1a48:6685:e80f%10
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.1.38
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . : fe80::12e9:92ff:fe8c:2f10%10
+                                       192.168.1.1
+
+```
+
