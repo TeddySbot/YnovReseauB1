@@ -245,4 +245,13 @@ www.thinkerview.com                            A      202   Answer     188.114.9
 ```
 <br>
 
-<H1></H1>
+<H1>🌞 Effectue un scan du réseau auquel tu es connecté !</H1>
+
+
+Command sur Nmap-Zenmap GUI
+```
+nmap -sn -PR 192.168.1.0/24
+
+[résultat dans Scan.pcap]
+```
+
