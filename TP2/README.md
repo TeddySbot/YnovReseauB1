@@ -1,4 +1,6 @@
-<H1>🌞 Prouvez que votre configuration est effective !</H1>
+<H1>1. Quelques pings </1>
+
+<H2>🌞 Prouvez que votre configuration est effective !</H2>
 
 ```powershell
 
@@ -102,3 +104,31 @@ Allez voir netcat1.pcap
 <H1>🌞 Inversez les rôles </H1>
 
 Allez voir netcat2.pcap
+
+
+<h1>1. Serveur web </h1>
+
+<h2>🌞 Utilisez Wireshark pour capturer du trafic HTTP</h2>
+
+Allez voir http.pcap
+
+<h1>2. Autres services</h1>
+
+<h2>🌞 Pour les 5 applications</h2>
+
+Avec powershell, on cherche l'ip correspond à ce que l'on cherche et avec Wireshark, on observe les captures correspondantes avec le filtre.
+
+```
+ip.addr == xxx.xxx.xxx.xxx
+```
+
+
+
+```
+Discord : 152.199.19.161:443   #service1.pcap
+Teams : 52.123.128.14:443      #service2.pcap
+Notion : 172.67.72.70:443      #service3.pcap
+riot : 162.159.61.3:443        #service4.pcap
+Valorant :172.65.252.238:5223  #service5.pcap
+```
+
