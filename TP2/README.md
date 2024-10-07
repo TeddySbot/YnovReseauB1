@@ -53,3 +53,38 @@ Durée approximative des boucles en millisecondes :
 
 ```
 
+<H1>🌞 Sur le PC client & 🌞 Echangez-vous des messages</H1>
+
+
+
+```powershell
+
+PS C:\Users\TeddyS\ cd C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11
+
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc.exe 10.10.10.54 7777
+Coucou mon petit
+Fais preuves de politesse
+^C
+
+```
+
+<H1>🌞 Sur le PC serveur </H1>
+
+```powershell
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc -l -p  8888
+hugo
+c moi
+Tes sur ?
+```
+
+<H1>🌞 Sur le PC serveur toujours</H1>
+
+```powershell
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> netstat -a -b -n
+
+ TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+ [nc.exe]
+```
+
+<H1>🌞 Utilisez une commande qui permet de voir la connexion en cours </H1>
+
