@@ -98,3 +98,7 @@ TCP    10.10.10.10:8888       10.10.10.54:6611       ESTABLISHED
 <H1>🌞 Faites une capture Wireshark complète d'un échange </H1>
 
 Allez voir netcat1.pcap
+
+<H1>🌞 Inversez les rôles </H1>
+
+Allez voir netcat2.pcap
