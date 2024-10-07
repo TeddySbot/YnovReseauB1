@@ -297,7 +297,8 @@ Carte réseau sans fil Wi-Fi :
 
 ```
 
-<H1>🌞 Sur le PC client</H1>
+<H1>🌞 Sur le PC client & 🌞 Echangez-vous des messages</H1>
+
 
 
 ```powershell
@@ -314,11 +315,20 @@ Fais preuves de politesse
 <H1>🌞 Sur le PC serveur </H1>
 
 ```powershell
-PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc -l -p  7777
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc -l -p  8888
 hugo
 c moi
 Tes sur ?
 ```
 
 <H1>🌞 Sur le PC serveur toujours</H1>
+
+```powershell
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> netstat -a -b -n
+
+ TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+ [nc.exe]
+```
+
+<H1>🌞 Utilisez une commande qui permet de voir la connexion en cours </H1>
 
