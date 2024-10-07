@@ -88,3 +88,9 @@ PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> netstat -a -b -n
 
 <H1>🌞 Utilisez une commande qui permet de voir la connexion en cours </H1>
 
+```powershell
+
+netstat -a -b -n | Select-String :8888
+TCP    10.10.10.10:8888       10.10.10.54:6611       ESTABLISHED
+
+```
