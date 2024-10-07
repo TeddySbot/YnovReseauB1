@@ -297,3 +297,28 @@ Carte réseau sans fil Wi-Fi :
 
 ```
 
+<H1>🌞 Sur le PC client</H1>
+
+
+```powershell
+
+PS C:\Users\TeddyS\ cd C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11
+
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc.exe 10.10.10.54 7777
+Coucou mon petit
+Fais preuves de politesse
+^C
+
+```
+
+<H1>🌞 Sur le PC serveur </H1>
+
+```powershell
+PS C:\Users\TeddyS\Downloads\netcat-win32-1.11\netcat-1.11> ./nc -l -p  7777
+hugo
+c moi
+Tes sur ?
+```
+
+<H1>🌞 Sur le PC serveur toujours</H1>
+
