@@ -375,3 +375,4 @@ teddy@teddy13:/var/lib$ ip a
     inet 10.5.1.138/24 brd 10.5.1.255 scope global secondary dynamic enp0s3
        valid_lft 374sec preferred_lft 374sec
 ```
+
