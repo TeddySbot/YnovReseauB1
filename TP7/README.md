@@ -213,3 +213,9 @@ traceroute to 1.1.1.1 (1.1.1.1), 64 hops max
 
 <h3>🌞 Visitez le service Web à travers le VPN </h3>
 
+```powerpoint
+teddy@teddy-VirtualBox:~$ traceroute 10.7.200.37
+traceroute to 10.7.200.37 (10.7.200.37), 64 hops max
+  1   10.7.200.1  0.712ms  0.352ms  0.516ms
+  2   10.7.200.37  0.894ms !X  1.052ms !X  0.819ms !X
+```
